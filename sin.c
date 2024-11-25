@@ -7,8 +7,8 @@ int main() {
     printf("Enter an angle:");
     scanf("%f",&a);
     rad=a*3.14/180;
-    printf("Sin(%f)=%f\n",a,sin(rad));
-    printf("uSin(%f)=%f\n",a,uSin(rad));
+    printf("Sin(%.2f)=%.2f\n",a,sin(rad));
+    printf("uSin(%.2f)=%.2f\n",a,uSin(rad));
     return 0;
 }
 float uSin(float x) {
