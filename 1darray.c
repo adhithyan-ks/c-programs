@@ -20,7 +20,7 @@ int main() {
     } while(option==1);
     printf("\nResults:\n");
     for(i=0;i<6;i++) {
-        printf("%3d %-20s %3d\n",i,candidate[i],count[i]);
+        printf("%-3d %-20s %d\n",i,candidate[i],count[i]);
     }
     return 0;
 }
