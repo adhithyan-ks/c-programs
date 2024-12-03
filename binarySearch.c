@@ -1,11 +1,20 @@
 #include<stdio.h>
-
+int binarySearch(int[],int,int);
 int main() {
-    int i,size,arr[10];
+    int i,size,arr[10],searchNum,result;
     printf("Enter size of array:");
     scanf("%d",&size);
-    printf("Enter array elements:");
-    for(i=0;i<n;i++) {
+    printf("Enter array elements:\n");
+    for(i=0;i<size;i++) {
         scanf("%d",&arr[i]);
+    }
+    printf("Enter Number to Search:");
+    scanf("%d",&searchNum);
+    result=binarySearch(arr,size,searchNum);
+    if(result==-1) {
+        printf("Number was not found");
+    }
+    else {
+        printf("Number found at index %d",result);
     }
 }
